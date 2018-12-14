@@ -1,0 +1,39 @@
+.forgotchangepass{
+    width: 310px;
+    margin: 0 auto;
+    .has-error .ant-form-explain{
+        margin-top: -16px;
+    }
+    h1{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .ant-form-item{
+        margin-bottom: 0;
+        
+    }
+    input{
+        width: 310px;
+        height: 48px;
+        margin-bottom: 16px;
+    }
+    button{
+        width: 310px;
+        height: 48px;
+        line-height: 48px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .forgotchangepass{
+        width: 100%;
+        .ant-form{
+            width: 100%;
+            input{
+                width:100%;
+            }
+            button{
+                width: 100%;
+            }
+        }
+    }
+}

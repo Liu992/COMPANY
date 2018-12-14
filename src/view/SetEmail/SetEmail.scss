@@ -1,0 +1,71 @@
+.setemail{
+    width: 100%;
+    hr{
+        border:.5px solid rgba(0,0,0,.08);
+    }
+    .setemail-center{
+        width: 100%;
+        min-width: 1040px;
+        margin: 0 auto;
+        .setemail-router{
+            margin: 32px 0;
+        }
+        .setemail-header{
+            margin-bottom: 10px;
+        }
+        .setemail-form{
+            margin-top:32px;
+        }
+        .setemail-form{
+            width: 100%;
+            margin-bottom: 40px;
+            .ant-form{
+                width: 38%;
+            }
+            .ant-input{
+                height: 48px;
+            }
+            .ant-form-item{
+                margin-bottom: 16px;
+                margin-top: 8px;
+            }
+            .captcha{
+                .ant-form-item-children{
+                    display: flex;
+                    justify-content: space-between;
+                    input{
+                        margin-right: 8px;
+                    }
+                    button{
+                        width: 88px;
+                        height: 48px;
+                        line-height: 48px;
+                        cursor: pointer;
+                    }
+                    .not-send{
+                        color: #2277CC;
+                        border:1px solid #2277CC;
+                    }
+                    .already-send{
+                        background-color: #B4BCC8;
+                        border: 1px solid #b4b4b4;
+                        color: #fff;
+                    }
+                }
+            }
+        .btnsub{
+            width: 200px;
+            height: 48px;
+            line-height: 48px;
+        }
+        }
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .setemail .setemail-center {
+        width: 100%;
+    }
+    .setemail .setemail-center .setemail-form .ant-form {width: 100%;}
+    .setemail .setemail-center .setemail-form .btnsub {width: 100%;}
+}

@@ -1,0 +1,130 @@
+.share{
+  width: 100%;
+  .share_box{
+    width: 100%;
+    background: #fff;
+    padding: 60px 10% 100% 10%!important;
+    #input{
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+  .share_top{
+    width: 100%;
+    box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+    padding: 50px 100px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    height: 290px;
+    align-items: center;
+    .txt{
+      color:#333333;
+      margin-bottom: 0;
+    }
+    .top_l{
+      .title{
+        color:#333333;
+        margin-bottom: 10px;
+      }
+      .address{
+        color:#2277CC;
+        margin-top:20px;
+        margin-bottom: 30px;
+      }
+      .copy_btn{
+        width: 180px;
+        height: 32px;
+        font-size: 16px;
+        border-radius: 6px;
+        outline: none;
+        border: none;
+        background: #2277CC;
+        color: #fff;
+        img{
+          margin-right: 10px;
+          // display: none;
+        }
+      }
+    }
+    .top_r{
+      .title{
+          font-size: 20px;
+          color:#333333;
+          margin-bottom: 22px;
+      }
+      .num{
+        font-size: 16px;
+        b{
+          color:#2277CC;
+          font-size: 20px;
+          margin: 0 4px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .share_bottom{
+    margin-top:50px;
+    padding-left: 40px;
+    position: relative;
+    min-height: 300px;
+    .history-tip{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        box-shadow: 2px 0px 8px rgba(48, 120, 192, 0.2);
+        position: absolute;
+        top: 2%;
+        left: 0;
+        color:#2277CC;
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .table{
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+        li{
+            width: 100%;
+            padding:0 30px;
+            .li-list{
+                width: 100%;
+                display: flex;
+                span{
+                    display: inline-block;
+                    flex: 1;
+                    height: 50px;
+                    line-height: 50px;
+                }
+            }
+            &:nth-child(even) {
+                background-color: #fff;
+            }
+            &:nth-child(odd) {
+                background-color: rgba(34, 119, 204, 0.08);
+            }
+        }
+    }
+    .page{
+        text-align: center;
+    }
+    .nullfile{
+        text-align: center;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+    }
+  }
+}

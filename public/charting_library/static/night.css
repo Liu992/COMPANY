@@ -1,0 +1,264 @@
+.chart-page {
+  background-color: #fff; 
+}
+.chart-page body {
+  color: rgb(66, 67, 72); 
+}
+.chart-page .pane-legend-icon-container svg {
+  fill: #61688A; 
+}
+.chart-page .chart-widget .chart-markup-table .pane-separator{
+  background: rgb(66, 67, 72)!important;
+}
+.charts-popup-list .item.active, .feature-no-touch .charts-popup-list .item:hover {
+  background: rgba(255,255,255,.8);
+  color: #fff;
+}
+.chart-page .tv-market-status__label--for-chart{
+  display: none!important;
+}
+.chart-page .tv-market-status--loading{
+  display: none;
+}
+.chart-page .tv-side-toolbar .tools-group .button {
+  background-color: #fff!important;
+  border-color: #fff!important; 
+}
+.chart-page .tv-side-toolbar .tools-group .button .main.text-as-icon {
+  color: rgba(255,255,255,.2); 
+}
+.chart-page .tv-side-toolbar .tools-group .button svg {
+  fill:rgba(255,255,255,.2); 
+}
+.chart-page .tv-side-toolbar .tools-group .button.selected, .chart-page .tv-side-toolbar .tools-group .button:hover, .chart-page .tv-side-toolbar .tools-group .button:active {
+  background-color:  rgba(255,255,255,.6);
+  border-color: rgba(255,255,255,.2); 
+}
+.chart-page .tv-side-toolbar .tools-group .button.selected svg, .chart-page .tv-side-toolbar .tools-group .button:hover svg, .chart-page .tv-side-toolbar .tools-group .button:active svg {
+  fill: #2277CC; 
+}
+.chart-page .tv-side-toolbar .tools-group .button.selected .main.text-as-icon, .chart-page .tv-side-toolbar .tools-group .button:hover .main.text-as-icon, .chart-page .tv-side-toolbar .tools-group .button:active .main.text-as-icon {
+  color: #2277CC; 
+}
+.chart-page .tv-side-toolbar .tools-group .button.selected .side, .chart-page .tv-side-toolbar .tools-group .button:hover .side, .chart-page .tv-side-toolbar .tools-group .button:active .side {
+  border-left: 1px solid #fff; 
+}
+.chart-page .tv-side-toolbar .tools-group .button:active svg {
+  fill: rgba(255,255,255,.2); 
+}
+.chart-page .charts-popup-list {
+  background-color: #000;
+  color: rgba(255,255,255,.6);
+  border-color: rgba(255,255,255,.2); 
+}
+.chart-page .charts-popup-list .separator {
+  border-top: 1px solid #c1c8ec; 
+}
+.chart-page .charts-popup-list .item {
+  /* background-color: #000; */
+  color: grey; 
+}
+.chart-page .charts-popup-list .item.active {
+  background-color: #fff;
+  color: #2277CC; 
+}
+.chart-page .charts-popup-list .icon-wrap svg {
+  fill: grey; 
+}
+.chart-page .list-inner .item {
+  background-color: #000; 
+}
+.chart-page .list-inner .item.active {
+  background-color: rgba(255,255,255,.2); 
+}
+.chart-page .list-inner .item.active svg {
+  fill: #2277CC; 
+}
+.chart-page .list-inner .item.active span.title {
+  color: #2277CC; 
+}
+.chart-page .list-inner .item span.title {
+  color: grey;
+}
+.chart-page .favored-list-container span:hover {
+  background-color: rgba(255,255,255,.2); 
+}
+.chart-page .tv-floating-toolbar {
+  background-color: #fff;
+  border-color: #2277CC; 
+}
+.chart-page .tv-floating-toolbar .tv-floating-toolbar__widget-wrapper .tv-floating-toolbar__drag, .chart-page .tv-floating-toolbar .tv-floating-toolbar__widget-wrapper input {
+  /* background-color: #000;  */
+}
+.chart-page .tv-floating-toolbar .tv-floating-toolbar__widget-wrapper .tv-floating-toolbar__drag svg, .chart-page .tv-floating-toolbar .tv-floating-toolbar__widget-wrapper input svg {
+  fill: grey; 
+}
+.chart-page .tv-floating-toolbar .tv-floating-toolbar__widget-wrapper .tv-floating-toolbar__widget {
+  /* border-color: #000;  */
+}
+.chart-page .tv-floating-toolbar .tv-floating-toolbar__widget-wrapper .tv-floating-toolbar__widget svg {
+  fill: grey; 
+}
+.chart-page .apply-common-tooltip {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #61688A; 
+}
+.chart-page .apply-common-tooltip:before {
+  border: 1px solid #fff; 
+}
+.chart-page .chart-page .layout__area--center .chart-container.active {
+  /* border: 1px solid #000 !important;
+  background: #000; */
+  outline: 3px dashed green; 
+}
+.chart-page .chart-controls-bar {
+  /* background-color: #000;  */
+}
+.chart-page .tv-side-toolbar .tools-group .button:hover,
+.chart-page .header-chart-panel .tools-group .button:hover {
+  background-color: #fff; 
+}
+.chart-page .tv-side-toolbar .button:hover,
+.chart-page .header-chart-panel .button:hover {
+  background: #fff; 
+}
+.chart-page .tv-side-toolbar .group,
+.chart-page .header-chart-panel .group {
+  float: left; 
+}
+/* 按钮字体颜色 */
+.chart-page .tv-side-toolbar .group .button,
+.chart-page .header-chart-panel .group .button {
+  border:none;
+  font-weight: normal;
+  /* color: rgba(255,255,255,.38);  */
+  cursor: pointer;
+}
+.chart-page .main-properties{
+  height: 254px!important;
+}
+._tv-dialog-content .main-properties.main-properties-aftertabs{
+  height: 40px!important;
+}
+.chart-page .space-single .select{
+  color: #2277CC!important;
+}
+.chart-page .tv-side-toolbar .group .button svg,
+.chart-page .header-chart-panel .group .button svg {
+  fill: grey; 
+}
+.chart-page .tv-side-toolbar .group .button:hover, .chart-page .tv-side-toolbar .group .selected,
+.chart-page .header-chart-panel .group .button:hover,
+.chart-page .header-chart-panel .group .button.selected {
+  background: #fff;
+  color: #2277CC; 
+  border-color: #fff!important;
+}
+.chart-page .header-chart-panel .group .button::before{
+  border: none!important;
+}
+.chart-page .tv-side-toolbar .group .button:hover svg, .chart-page .tv-side-toolbar .group .button.selected svg,
+.chart-page .header-chart-panel .group .button:hover svg,
+.chart-page .header-chart-panel .group .button.selected svg {
+  fill: #2277CC; 
+}
+.chart-page .tv-side-toolbar .group .button:active,
+.chart-page .header-chart-panel .group .button:active {
+  color: grey; 
+}
+.chart-page .tv-side-toolbar .group .button:active svg,
+.chart-page .header-chart-panel .group .button:active svg {
+  fill: grey; 
+}
+.chart-page .tv-side-toolbar .header-group-fullscreen,
+.chart-page .header-chart-panel .header-group-fullscreen {
+  float: right;
+  padding-right: 5px; 
+}
+.chart-page .tv-side-toolbar .header-group-properties, .chart-page .tv-side-toolbar .header-group-indicators,
+.chart-page .header-chart-panel .header-group-properties,
+.chart-page .header-chart-panel .header-group-indicators {
+  float: none; 
+}
+.chart-page .tv-side-toolbar .tools-group:not(:first-child):not(.no-delimiter):before {
+  background: grey; 
+}
+.chart-page .button svg {
+  fill: grey; 
+}
+.chart-page .tv-side-toolbar {
+  /* border-right: 1px solid #000;
+  background-color: #000;  */
+}
+.chart-page .tv-side-toolbar .tools-group .button.selected .side {
+  border-left: 1ps solid #fff; 
+}
+.chart-page .tv-side-toolbar .tools-group .button.selected .side, .chart-page .tv-side-toolbar .tools-group .button.selected .main {
+  background: #fff; 
+}
+.chart-page .chart-container {
+  /* background-color: #000; */
+  border: 1px solid #fff; 
+}
+.chart-page .tv-close-panel {
+  background-color: #fff;
+  border: #fff; 
+}
+/* 按钮背景色 */
+.chart-page .button { 
+  background-color: #fff;
+  border-color: #fff; 
+}
+.chart-page .button:hover {
+  background: #fff;
+}
+.chart-page .charts-popup-list{
+  background: #fff;
+  border-color: #fff;
+  border-radius: 6px;
+}
+.tv-caret{
+  border-color: #545353 #fff #fff;
+}
+.chart-page .apply-common-tooltip{
+  background-color: #fff;
+}
+.chart-page .apply-common-tooltip:hover{
+  background-color: #fff;
+  border:#fff;
+}
+.chart-page .chart-container{
+  border-color:#fff;
+}
+.favored-list-container.active span.submenu, .favored-list-container span.submenu.active{
+  background-color: #fff;
+  border-color:#fff;
+}
+/* .chart-page .button.selected, .chart-page .button.active {
+  background-color: rgba(255,255,255,.38) !important; 
+  color: #fff;
+}
+.chart-page .button.selected svg, .chart-page .button.active svg {
+  fill: rgba(255,255,255,.38); 
+}
+._tv-dialog .main-properties{
+  height: 280px!important;
+  background-color: rgba( 91, 133, 191, 0.9);
+}
+.left .group .select{
+  background: #fff;
+  color: #fff !important;
+  border-color:#fff;
+} */
+@media screen and (max-width: 768px){
+  .chart-page .chart-widget table.chart-markup-table tr td:nth-child(3){
+    display: none;
+  }
+  .chart-page .chart-widget table.chart-markup-table tr td{
+    width: 100%!important;
+  }
+  .chart-page .chart-widget table.chart-markup-table tr td canvas{
+    width: 100%!important;
+  }
+}

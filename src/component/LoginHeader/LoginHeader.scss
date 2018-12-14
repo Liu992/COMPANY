@@ -1,0 +1,27 @@
+$bg: #1d292f;
+$maincolor: #2277CC; 
+$fff60: rgba(255, 255, 255, .6);
+.login-header{
+    width: 100%;
+    height: 64px;
+    background: #fff;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+        .logo{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-right: 80px;
+            img{
+                height: 32px;
+                width: 155px;
+            }
+        }
+}
+@media screen and (max-width: 768px) {
+    .login-header{
+        padding:  0 20px;
+    }
+}

@@ -1,0 +1,106 @@
+$maincolor: #2277CC;
+.setphone{
+    width: 100%;
+    hr{
+        border:.5px solid rgba(0,0,0,.08);
+    }
+    input{
+        border: none;
+        box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+    }
+    .ant-input-group-addon{
+        border: none;
+        box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+    }
+    .setphone-center{
+        width: 100%;
+        min-width: 1040px;
+        margin: 0 auto;
+        // margin-bottom: 65px;
+        .ant-input:focus,.ant-input:hover{
+            border-color: #2277CC;
+            box-shadow: 0,0,0,#fff;
+        }
+        .errortip{
+            margin-top: -12px;
+        }
+        .setphone-router{
+            margin: 32px 0;
+        }
+        .setphone-header{
+            margin-bottom: 10px;
+        }
+        .setphone-form{
+            margin-top:32px;
+            margin-bottom: 40px;
+        }
+        .setphone-form{
+            width: 100%;
+            .send{
+                width: 300px;
+                height: 48px;
+            }
+            .not-send{
+                background: rgba(43, 149, 255, 0.1)!important;
+                border: none;
+                color: rgba(34, 119, 204, 1);
+            }
+            .not-send:hover{
+                border-color: $maincolor;
+            }
+            .ant-form{
+                width: 38%;
+            }
+            .ant-input{
+                height: 48px;
+            }
+            .ant-form-item{
+                margin-bottom: 16px;
+                margin-top: 8px;
+            }
+            .captcha{
+                .ant-form-item-children{
+                    display: flex;
+                    justify-content: space-between;
+                    input{
+                        margin-right: 8px;
+                    }
+                    button{
+                        width: 88px;
+                        height: 48px;
+                        line-height: 48px;
+                        background: transparent;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        outline: none;
+                    }
+                    .already-send{
+                        background-color: #B4BCC8;
+                        border:1px solid #b4b4b4;
+                        color: #fff;
+                    }
+                }
+            }
+        .btnsub{
+            width: 200px;
+            height: 48px;
+            line-height: 48px;
+        }
+        }
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .setphone .setphone-center {
+        width: 100%;
+    }
+    .setphone .setphone-center .setphone-form {
+        width: 100%;
+    }
+    .setphone .setphone-center .setphone-form .ant-form {
+        width: 100%;
+    }
+    .setphone .setphone-center .setphone-form .btnsub {
+        width: 100%;
+    }
+}

@@ -1,0 +1,52 @@
+.tradingchart{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .tradingchart-header{
+        width: 100%;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        flex-shrink: 0;
+        h1{
+            margin: 0;
+            .anticon{
+                display: none;
+            }
+        }
+    }
+    .tradingchart-header-details{
+        margin: 0 0 0 40px;
+        span{
+            margin-right: 4px;
+        }
+        .marR20{
+            margin-right: 20px;
+        }
+    }
+}
+#tv_chart_container{
+    flex: 1;
+    .chart-markup-table{
+        tbody{
+            tr{
+                .pane-separator{
+                    background: #ccc;
+                }
+            }
+        }
+        
+    }
+    ._tv-dialog{
+        position: absolute!important;
+        top: 0;
+        display: flex;
+    }
+    ._tv-dialog-content{
+        display: block;
+    }
+   
+}
+

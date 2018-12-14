@@ -1,0 +1,21 @@
+.agreement{
+    margin-top: 20px!important;
+    p{
+        text-indent: 2rem;
+        padding: 0 10%;
+        margin-bottom: 20px;
+    }
+}
+.agreement-header{
+    font-size: 32px;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .agreement{
+        margin-top: 20px!important;
+        p{
+            text-indent: 2rem;
+            padding: 0 10px;
+        }
+    }
+}

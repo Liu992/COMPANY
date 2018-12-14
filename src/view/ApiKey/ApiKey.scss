@@ -1,0 +1,117 @@
+.apikey{
+    width: 100%;
+    hr{
+        border:.5px solid rgba(0,0,0,.08);
+    }
+    .apikey-center{
+        width: 100%;
+        min-width: 1040px;
+        margin: 0 auto;
+        .apikey-router{
+            margin: 32px 0;
+        }
+        .apikey-header{
+            margin-bottom: 10px;
+        }
+        .apikey-form{
+            width: 100%;
+            margin-top:32px;
+            margin-bottom: 45px;
+            &>span{
+                display: block;
+                margin-bottom: 8px;
+            }
+            &>input{
+                width: 360px;
+                height: 48px;
+                margin-bottom: 16px;
+            }
+            &>p{
+                margin-bottom: 16px;
+                width: 360px;
+                height: 48px;
+                display: flex;
+                justify-content: space-between;
+                button{
+                    margin-left: 8px;
+                    width: 88px;
+                    height: 48px;
+                    outline: none;
+                    border-radius: 6px;
+                    background: transparent;
+                    border:1px solid #2277CC;
+                }
+                .already-send{
+                    background-color: #B4BCC8;
+                    border:1px solid #b4b4b4;
+                    color: #fff;
+                }
+                input{
+                    flex: 1;
+                }
+            }
+            &>button{
+                width: 200px;
+                height: 48px;
+            }
+        }
+        .apikey-table{
+            margin-bottom: 40px;
+            h1{
+                margin-bottom: 8px;
+            }
+            table{
+                margin-top: 16px;
+                width: 100%;
+                text-align: center;
+                tr{
+                    border-bottom: 1px solid rgba(0,0,0,.08);
+                    height: 48px;
+                }
+                thead{
+                    tr{
+                        th:first-child{
+                            text-align: left;
+                        }
+                        th:last-child{
+                            text-align: right;
+                        }
+                    }
+                }
+                tbody{
+                    tr:last-child{
+                        border: none;
+                    }
+                    tr{
+                        .run{
+                            i{
+                                display: inline-block;
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background: #7ED321;
+                                margin-right: 8px;   
+                            }
+                        }
+                        .dis{
+                            i{
+                                display: inline-block;
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background: #F5A623;
+                                margin-right: 8px;   
+                            }
+                        }
+                        td:first-child{
+                            text-align: left;
+                        }
+                        td:last-child{
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,151 @@
+.deposit-box{
+    width: 100%;
+    min-width: 1040px;
+    margin: 0 auto;
+    padding-top: 40px!important;
+    background: #fff;
+    .deposit-title{
+        margin-bottom: 28px;
+    }
+    .deposit-content{
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+        border-radius: 6px;
+        color: #333333;
+        .content-left{
+            width: 545px;
+        }
+        .left-coin{
+            height: 48px;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+            border-radius: 6px;
+            .ant-select-selection--single{
+                height: 100%;
+            }
+            .ant-select-selection__rendered{
+                line-height: 48px;
+            }
+        }
+        .left-address{
+            height: 48px;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+            border-radius: 6px;
+            margin-top:10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 12px;
+            #input{
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                z-index: -10;
+            }
+        }
+        .left-tip{
+            padding-left: 14px;
+            &>p{
+                margin-bottom: 4px;
+                font-size: 12px;
+            }
+        }
+        .content-right{
+            padding-right: 80px;
+            .codetitle{
+                width: 180px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .imgcode{
+
+            }
+        }
+    }
+    .deposit-history{
+        margin-top:50px;
+        padding-left: 40px;
+        position: relative;
+        min-height: 300px;
+        .history-tip{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            outline: none;
+            border: none;
+            box-shadow: 2px 0px 8px rgba(48, 120, 192, 0.2);
+            position: absolute;
+            top: 2%;
+            left: 0;
+            color:#2277CC;
+            font-size: 16px;
+            padding: 0 20px;
+        }
+        .table{
+            width: 100%;
+            text-align: center;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+            li{
+                width: 100%;
+                padding:0 30px;
+                .li-list{
+                    width: 100%;
+                    display: flex;
+                    span{
+                        display: inline-block;
+                        flex: 1;
+                        height: 50px;
+                        line-height: 50px;
+                    }
+                }
+                .li-detail{
+                    display: block;
+                    width: 100%;
+                    transition: all 1s;
+                    text-align: left;
+                    padding-left: 32px;
+                    overflow: hidden;
+                    transition: height .5s;
+                    span{
+                        display: block;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+                .li-detail-hide{
+                    height: 0;
+                    border-top: 1px solid #fff;
+                }
+                .li-detail-show{
+                    height: 30px;
+                    border-top: 1px solid #ecebeb;
+                }
+                &:nth-child(even) {
+                    background-color: #fff;
+                }
+                &:nth-child(odd) {
+                    background-color: rgba(34, 119, 204, 0.08);
+                }
+            }
+        }
+        .page{
+            text-align: center;
+        }
+        .nullfile{
+            text-align: center;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 80px;
+                height: 80px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

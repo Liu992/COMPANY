@@ -1,0 +1,155 @@
+.setcny{
+    .header{
+        .h-l{
+            .aubitex-nav{
+                .aubitex-nav-ul{
+                    li:nth-child(4),li:nth-child(5){
+                        display: none;
+                    }
+                    li:nth-child(6),li:nth-child(7){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .setcny-box{
+        .setcny-title{
+            text-align: center;
+            font-size: 34px;
+            height: 80px;
+            line-height: 80px;
+        }
+        .setcny-content{
+            text-align: center;
+            .nav{
+                width: 50%;
+                display: flex;
+                padding-bottom: 16px;
+                margin: 30px auto;
+                border-bottom: 1px solid #ccc;
+                li{
+                    flex: 1;
+                    cursor: pointer;
+                    font-size: 18px;
+                }
+                .actived{
+                    color: #2277CC;
+                }
+            }
+            .setcny-matter{
+                &>.show{
+                    display: block!important;
+                }
+                &>div{
+                    display: none!important;
+                }
+                &>.bank{
+                    width: 430px;
+                    margin:0 auto;
+                    .ant-form-item{
+                        margin-bottom: 0;
+                        .ant-form-item-label{
+                            width: 100%;
+                            text-align: left;
+                            line-height: 20px;
+                        }
+                        .ant-form-explain{
+                            text-align: left;
+                        }
+                        .ant-form-item-control-wrapper{
+                            flex: 1;
+                        }
+                        .ant-btn{
+                            margin:40px 0;
+                        }
+                    }
+                }
+                &>.zfb,.weixin{
+                    margin: 0 auto;
+                    width: 400px;
+                    display: flex;
+                    flex-direction: column;
+                    .ant-upload-list-picture-card .ant-upload-list-item-actions .anticon:hover{
+                        color: #999;
+                    }
+                    .ant-upload-list-picture-card .ant-upload-list-item-actions .anticon{
+                        color:#999;
+                    }
+                    .ant-upload{
+                        width: 200px;
+                        height: 200px;
+                    }
+                    .ant-upload-list-picture-card .ant-upload-list-item{
+                        width: 200px;
+                        height: 200px;
+                    }
+                    label{
+                        display: flex;
+                        margin-bottom: 20px;
+                        &>span{
+                            display: inline-block;
+                            width: 20%;
+                            text-align: right;
+                            margin-right: 20px;
+                        }
+                        &>input{
+                            flex: 1;
+                            height: 30px;
+                            border:1px solid #ccc;
+                            outline: none;
+                            border-radius: 6px;
+                            padding-left:10px;
+                            &::-webkit-input-placeholder{
+                                color:rgba(0,0,0,.2);
+                            }
+                        }
+                    }
+                    .codeupdata{
+                        display: flex;
+                        &>span{
+                            display: inline-block;
+                            width: 20%;
+                            text-align: right;
+                            margin-right: 20px;
+                        }
+                    }
+                    .btn{
+                        margin-top: 60px;
+                        button{
+                            width: 200px;
+                            height: 30px;
+                            outline: none;
+                            border:1px solid #2277CC;
+                            color: #2277CC;
+                            border-radius: 6px;
+                            margin-bottom: 60px;
+                        }
+                    }
+                    // display: none;
+                }
+            }
+        }
+        .weixin{
+            display: flex;
+            flex-direction: column;
+            label{
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .setcny .setcny-box .setcny-content .setcny-matter > .zfb label > input{
+        flex: none;
+        width: 200px;
+    }
+    .setcny .setcny-box .setcny-content .setcny-matter > .bank{
+        width: 100%;
+    }
+    .setcny .setcny-box .setcny-content .setcny-matter .weixin label > input{
+        flex: none;
+        width: 200px;
+    }
+}

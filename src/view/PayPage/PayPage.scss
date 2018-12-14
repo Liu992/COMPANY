@@ -1,0 +1,192 @@
+.paypage{
+    .header{
+        .h-l{
+            .aubitex-nav{
+                .aubitex-nav-ul{
+                    li:nth-child(4),li:nth-child(5){
+                        display: none;
+                    }
+                    li:nth-child(6),li:nth-child(7){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .paypage-box{
+        padding-bottom: 90px!important;
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+        .paypage_left{
+            width: 60%;
+        }
+        .paypage_right{
+            width: 34%;
+            height: 500px;
+            margin-top: 80px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .pay-dialog{
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,.65);
+            width: 100%;
+            height: 100%;
+            z-index:9;
+            .pay-dialog-box{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 400px;
+                height: 340px;
+                background: #fff;
+                border-radius: 6px;
+                padding: 34px;
+                .close{
+                    z-index: 9;
+                }
+                .qrcode{
+                    position: absolute;
+                    top: 15px;
+                    right: 20px;
+                    img{
+                        width: 140px;
+                        height: 140px;
+                        border: 1px solid #ccc;
+                        padding: 5px;
+                    }
+                    h2{
+                        font-size: 14px;
+                        color: #999;
+                    }
+                }
+                .dialog-price{
+                    i{
+                        color: #999;
+                        font-size: 12px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin-bottom: 8px;
+                    }
+                }
+                hr{
+                    margin-top: 20px;
+                }
+                .dialog-btn{
+                    margin-top:20px;
+                    text-align: right;
+                    button{
+                        margin-left: 12px;
+                        border:none;
+                        outline: none;
+                    }
+                    button:nth-child(1){
+                        background: transparent;
+                        color:#000;
+                    }
+                    button:nth-child(2){
+                        background: #2277CC;
+                        border-radius: 6px;
+                        color:#fff;
+                        padding: 4px 6px;
+                    }
+                }
+            }
+        }
+        .pay-title{
+            font-size: 12px;
+            display: block;
+            color: #ccc;
+            margin-top: 26px;
+            margin-bottom: 10px;
+        }
+        .pay-obj{
+            font-size: 26px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        .price{
+            .pp{
+                margin:0;
+                span:nth-child(1){
+                    margin-right: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .pay-notice{
+            .pp{
+                margin-right:10px;
+                display: block;
+                img{
+                    margin-right: 10px;
+                }
+                span{
+                    margin-right:10px;
+                    font-size: 12px;
+                    white-space: normal;
+                }
+                .ant-radio-disabled{
+                    display: none;
+                }
+            }
+            .check{
+                margin-right: 10px;
+            }
+        }
+        .pay-time{
+            margin: 20px 0;
+            font-weight: 600;
+        }
+        .pay-btn{
+            display: flex;
+            align-items: center;
+            button{
+                padding: 10px 40px;
+                color:#fff;
+                background: #2277CC;
+                border-radius: 2px;
+                outline:none;
+                border:none;
+            }
+            .waitbtn{
+                border:1px solid #2277CC;
+                background: transparent;
+                color: #2277CC;
+            }
+            .disButton{
+                background: #ccc;
+            }
+            i{
+                font-size: 12px;
+                margin-left: 20px;
+                color:#2277CC;
+            }
+        }
+        .pay-not-btn{
+            background: transparent;
+            color:#2277CC;
+            font-size: 12px;
+            margin:20px 0;
+            button{
+                outline: none;
+                border:none;
+            }
+        }
+        .pay-need{
+            margin-top:20px;
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}

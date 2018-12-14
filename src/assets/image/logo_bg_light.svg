@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="117px" height="28px" viewBox="0 0 117 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>logo_bg_light</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sign-In" transform="translate(-40.000000, -18.000000)">
+            <g id="Group-11">
+                <rect id="Rectangle-Copy-3" x="0" y="0" width="1440" height="64"></rect>
+                <g id="Group-2" transform="translate(40.000000, 18.000000)">
+                    <circle id="Oval-3" stroke="#2277CC" stroke-width="6" fill-rule="nonzero" cx="22" cy="14" r="11"></circle>
+                    <polygon id="Rectangle" fill="#2277CC" fill-rule="nonzero" points="9 0 15 0 6 28 0 28"></polygon>
+                    <text id="Aubitex" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="20" font-weight="bold" line-spacing="28" fill="#252E33">
+                        <tspan x="44" y="20">Aubitex</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

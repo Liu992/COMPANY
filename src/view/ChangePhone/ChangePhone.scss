@@ -1,0 +1,93 @@
+.changephone{
+    width: 100%;
+    hr{
+        border:.5px solid rgba(0,0,0,.08);
+    }
+    .changephone-center{
+        width: 295px;
+        margin: 0 auto;
+        .changephone-header{
+            margin-bottom: 10px;
+            margin-top:60px;
+            text-align: center;
+        }
+        .changephone-form{
+            margin-top:32px;
+        }
+        .changephone-form{
+            width: 100%;
+            margin-bottom: 40px;
+            .ant-form{
+                width: 100%;
+            }
+            .ant-input{
+                height: 48px;
+            }
+            .ant-form-item{
+                margin-bottom: 16px;
+                margin-top: 8px;
+            }
+            .phone{
+                .ant-input-wrapper{
+                    box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+                    border-radius: 6px;
+                }
+                .ant-input-group-addon{
+                    border:none;
+                }
+                .ant-input{
+                    border: none;
+                }
+            }
+            .captcha{
+                .ant-form-item-children{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border:none;
+                    box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+                    border-radius: 6px;
+                    background: #fff;
+                    input{
+                        margin-right: 8px;
+                        border: none;
+                        box-shadow: 0px 0px 0px rgba(48, 120, 192, 0.2);
+                    }
+                    button{
+                        width: 75px;
+                        height: 24px;
+                        line-height: 24px;
+                        background: transparent;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        outline: none;
+                        margin-right: 10px;
+                    }
+                    .not-send{
+                        background: rgba(43, 149, 255, 0.1) !important;
+                        border: none;
+                        color: #2277cc;
+                    }
+                    .already-send{
+                        background-color: #B4BCC8;
+                        border: 1px solid #b4b4b4;
+                        color: #fff;
+                    }
+                }
+            }
+        .btnsub{
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
+        }
+        }
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .changephone .changephone-center {
+        width: 100%;
+    }
+    .changephone .changephone-center .changephone-form .ant-form {width: 100%;}
+    .changephone .changephone-center .changephone-form .btnsub {width: 100%;}
+}

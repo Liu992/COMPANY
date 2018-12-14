@@ -1,0 +1,16 @@
+.assets-history{
+    width: 100%;
+    .history-box{
+        width: 100%;
+        min-width: 1040px;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        .hisory-path{
+            margin: 32px 0 40px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.assets-history .history-box {width: 100%;}
+}

@@ -1,0 +1,136 @@
+button{
+    cursor: pointer;
+}
+body .ant-tooltip.ant-tooltip-placement-right div.ant-tooltip-content .ant-tooltip-inner{
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.anticon svg:not(:root) {
+    display: none!important;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: rgba(0,0,0,.60);
+    cursor: pointer;
+}
+.errtip{
+    margin-top: -12px;
+    margin-bottom: 4px;
+    i{
+        font-size: 10px;
+        color: #FF5733;
+        margin-right: 4px;
+    }
+}
+.has-error .ant-form-explain, .has-error .ant-form-split{
+    font-size: 12px;
+}
+.ant-pagination .ant-pagination-item-link .anticon{
+    display: none!important;
+}
+
+
+.ant-pagination-prev a {
+    height: 100%;
+}
+.ant-pagination-next a {
+    height: 100%;
+}
+.ant-btn{
+    // margin-top: 20px;
+}
+// .has-error .ant-input, .has-error .ant-input:hover {
+//     border-color: #FF5733 !important;
+// }
+.white60{
+    color: rgba(255,255,255,.6);
+}
+.white24{
+    color: rgba(255,255,255,.24);
+}
+.white38{
+    color: rgba(255,255,255,.38);
+}
+.white87{
+    color: rgba(255,255,255,.87);
+}
+.headcolor{
+    color:#17232A;
+}
+.white{
+    color: #fff;
+}
+.black38{
+    color: RGBA(0, 0, 0, 0.38);
+}
+.black87{
+    color: RGBA(0, 0, 0, 0.87);
+}
+.black60{
+    color: RGBA(0, 0, 0, 0.6);
+}
+.black12{
+    color: RGBA(0, 0, 0, 0.12);
+}
+.maingreen{
+    color:#2277CC;
+    cursor: pointer;
+}
+.mainred{
+    color: #FF5733;
+}
+
+.font24{
+    font-size: 24px;
+}
+.font20{
+    font-size: 20px;
+}
+.font18{
+    font-size: 18px;
+}
+.font16{
+    font-size: 16px;
+}
+.font14{
+    font-size: 14px;
+}
+.font12{
+    font-size: 12px;
+}
+.font10{
+    font-size: 10px;
+}
+.greenbackground{
+    background: #2277CC;
+    color: white;
+}
+.redbackground{
+    background: #FF5733;
+    color: white;
+}
+
+.borderblack12{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: 6px;
+    outline: none;
+}
+.btngreenhover:hover{
+    background: #024b84;
+    color: #d0d5d3;
+}
+.btnredhover:hover{
+    background: #b64433;
+    color: #d0d5d3;
+}
+.black12-bg{
+    background: rgba(0,0,0,.12);
+}
+.font-w{
+    font-weight: 600;
+}

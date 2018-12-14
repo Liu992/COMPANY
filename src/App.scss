@@ -1,0 +1,31 @@
+.wrapper{
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets//image/sign_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  input::placeholder{
+    color:#979797;
+  }
+  &>div{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    // padding-bottom: 64px;
+    box-sizing: border-box;
+    &>div:nth-child(2){
+      min-height: calc(100% - 128px);
+      padding:0 10% 100px 10%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper{
+    &>div{
+      &>div:nth-child(2){
+        padding:0 15px 80px 15px;
+      }
+    }
+  }
+}

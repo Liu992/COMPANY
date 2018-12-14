@@ -1,0 +1,40 @@
+
+.signin{
+    width: 100%;
+    // flex: 1;
+    box-sizing: border-box;
+    background: #fff;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    .signin-content{
+        width: 100%;
+        position: relative;
+        background-image: url(../../assets/image/sign_bg.png);
+        background-repeat: no-repeat;
+        // flex: 1;
+        // justify-content: center;
+        .ant-btn{
+            box-sizing: border-box;
+            border: 1px solid rgba(0,0,0,.12);
+            border-radius: 6px;
+            outline: none;
+        }
+        input{
+            border:none;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2)!important;
+        }
+        .ant-input{
+            border:none;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2)!important;
+        }
+        .ant-input:focus{
+            box-shadow: 0 0 0 2px RGBA(0, 168, 96, 0.12);
+        }
+    }
+    .signin-content>div{
+        margin-top:60px;
+    }
+}
+

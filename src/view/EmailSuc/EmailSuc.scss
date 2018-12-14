@@ -1,0 +1,51 @@
+$black87:rgba(0,0,0,.87);
+$black60:rgba(0,0,0,.60);
+$maincolor: #2277CC;
+.email-suc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 1040px;
+    .email-suc-header{
+        font-size: 24px;
+        color: $black87;
+        font-weight: 600;
+    }
+    .email-suc-content{
+        color: $black60;
+        max-width: 640px;
+        margin: 24px 0 40px 0;
+    }
+    button{
+        width: 300px;
+        height: 40px;
+        background-color: $maincolor;
+        color: #fff;
+        &:hover{
+            background: #024b84!important;
+            color: #d0d5d3;
+        }
+    }
+    .ant-btn:focus{
+        border-color: $maincolor!important;
+        color: $maincolor;
+    }
+}
+@media screen and (max-width: 768px) {
+    .email-suc{
+        width: 100%;
+        min-width: 100%;
+        .verify-email-tip{
+            width: 100%;
+            height: auto;
+            padding: 6px;
+            p{
+                margin: 0;
+            }
+        }
+        button{
+            width: 100%;
+        }
+    }
+}

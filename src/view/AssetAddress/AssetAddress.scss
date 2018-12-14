@@ -1,0 +1,144 @@
+.assetaddress{
+    width: 100%;
+    .address-content{
+        width: 100%;
+        min-width: 1040px;
+        margin: 0 auto;
+        .ant-input{
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+            border:none;
+        }
+        .add-address{
+            width: 100%;
+            border-bottom: 1px solid #e2e2e2;
+            padding: 100px;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+            border-radius: 6px;
+            margin-top: 60px;
+            background: #fff;
+        }
+            .add-detail{
+                width: 100%;
+                display: flex;
+                &>span{
+                    input{
+                        height: 40px;
+                    }
+                }
+                &>span:nth-child(1){
+                    width: 10%;
+                }
+                &>span:nth-child(2){
+                    margin:0 20px;
+                    flex: 1;
+                }
+                &>span:nth-child(3){
+                    width: 40%;
+                    flex: 1;
+                }
+                .ant-select{
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    .ant-select-selection--single{
+                        height: 100%;
+                    }
+                    .ant-select-selection__rendered{
+                        line-height: 38px;
+                    }
+                }
+            }
+            .add-btn{
+                text-align: right;
+                width: 100%;
+                button{
+                    width: 120px;
+                    margin-top: 20px;
+                    height: 40px;
+                }
+            }
+        }
+        .address-list{
+            .list-top{
+                display: flex;
+                margin-top: 50px;
+                margin-bottom: 30px;
+                align-items: center;
+                height: 40px;
+                overflow-y: scroll;
+                &>h2{
+                    font-size: 20px;
+                    margin: 0;
+                }
+                .ant-select{
+                    margin-left: 30px;
+                    width: 120px;
+                }
+            }
+            .list-table{
+                width: 100%;
+                max-height: 240px;
+                margin-bottom: 60px;
+                box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+                border-radius: 6px;
+                overflow-y: scroll;
+                table{
+                    width: 100%;
+                    text-align: center;
+                    // table-layout: fixed;
+                    thead{
+                        background: #fff;
+                        tr{
+                            th{
+                                height: 48px;
+                            }
+                        }
+                    }
+                    tbody{
+                        width: 100%;
+                        & > tr:nth-child(even) > td {
+                            background-color: #fff;
+                        }
+                        & > tr:nth-child(odd) > td {
+                            background-color: rgba(34, 119, 204, 0.08);
+                        }
+                        tr{
+                            width: 100%;
+                            td{
+                                height: 48px;
+                                
+                                img{
+                                    width: 24px;
+                                    margin-right: 12px;
+                                }
+                                vertical-align: middle;
+                            }
+                            td:last-child{
+                                width: 21%;
+                                a:first-child{
+                                    margin-right: 28px;
+                                }
+                                a:hover{
+                                    color: #2277CC;
+                                }
+                            }
+                        }
+                        tr:last-child{
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+@media screen and (max-width: 768px){
+    .assetaddress{
+        .address-content{
+            width: 100%;
+            .add-address .add-detail > span:nth-child(1){
+                width: 25%;
+            }
+        }
+    }
+    .assetaddress .address-content .add-address .add-btn button {width: 100%;}
+}

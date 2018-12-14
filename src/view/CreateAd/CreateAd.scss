@@ -1,0 +1,191 @@
+.createad{
+    .header{
+        .h-l{
+            .aubitex-nav{
+                .aubitex-nav-ul{
+                    li:nth-child(4),li:nth-child(5){
+                        display: none;
+                    }
+                    li:nth-child(6),li:nth-child(7){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .createad-box{
+        padding: 60px 10% 100px 10%!important;
+        .createad-title{
+            font-size: 20px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            span{
+                button{
+                    margin-left: 20px;
+                    outline: none;
+                    border: 1px solid #2277CC;
+                    color: #2277CC;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    padding: 2px 4px;
+                }
+            }
+        }
+        .createad-list{
+            width: 100%;
+            min-height: 400px;
+            .createad-table{
+                width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                thead{
+                    th{
+                        height: 48px;
+                        border-bottom: 1px solid RGBA(0, 0, 0, 0.08);
+                    }
+                    tr{
+                        th:first-child{
+                            text-align: left;
+                        }
+                        th:last-child{
+                            text-align: right;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        width: 100%;
+                        border-bottom: 1px solid RGBA(0, 0, 0, 0.08);
+                        td{
+                            height: 48px;
+                        }
+                        td:first-child{
+                            text-align: left;
+                        }
+                        td:last-child{
+                            text-align: right;
+                        }
+                    }
+                    tr:last-child{
+                        border:none;
+                    }
+                }
+            }
+            .createad-ul{
+                width: 100%;
+                display: none;
+                li{
+                    width: 100%;
+                    border: 1px solid #2277CC;
+                    margin-bottom: 20px;
+                    border-radius: 6px;
+                    padding: 15px;
+                    p{
+                        margin-bottom: 8px;
+                    }
+                    .time{
+                        width: 100%;
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                    .coin{
+                        width: 50%;
+                        display: inline-block;
+                    }
+                    .number{
+                        width: 50%;
+                        display: inline-block;
+                    }   
+                    .quota{
+                        width: 50%;
+                        display: inline-block;
+                    }
+                    .price{
+                        width: 50%;
+                        display: inline-block;
+                    }
+                    .type{
+                        width: 50%;
+                        display: inline-block;
+                    }
+                    .state{
+                        width: 50%;
+                        display: inline-block;
+                    }
+                    .action{
+                        width: 100%;
+                        display: inline-block;
+                        text-align: right;
+                        span{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            .ant-pagination{
+                text-align: center;
+                margin:40px 0;
+
+            }
+        }
+        .createad-from{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: RGBA(0, 0, 0, 0.65);
+            .ant-form{
+                width: 328px;
+                height: 326px;
+                background: #fff;
+                border-radius: 4px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin:auto;
+                padding:32px;
+                .close{
+                    position: absolute;
+                    top:10px;
+                    right: 10px;
+                }
+                .ant-form-item{
+                    display: flex;
+                    margin-bottom: 10px;
+                    .ant-form-item-label{
+                        width: 30%;
+                        text-align: left;
+                    }
+                    .ant-input-number{
+                        width: 171px;
+                    }
+                }
+                .ant-form-item:last-child{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .createad .createad-box .createad-list .createad-table{
+        display: none;
+    }
+    .createad .createad-box .createad-list .createad-ul{
+        display: block;
+    }
+    .createad .createad-box .createad-from .ant-form .ant-form-item .ant-form-item-label{
+        width: 40%;
+    }
+    .createad .createad-box .createad-from .ant-form .ant-form-item:last-child {
+        text-align: center;
+    }
+}

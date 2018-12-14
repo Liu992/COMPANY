@@ -1,0 +1,169 @@
+$maincolor: #2277CC; 
+.maincolor{
+    color: $maincolor;
+}
+.signup{
+    position: relative;
+    width: 310px;
+    padding: 0!important;
+    margin: 0 auto;
+    .ant-checkbox-wrapper + span{
+        padding: 0;
+    }
+    .repetitiontip{
+        margin-top: -10px;
+        margin-bottom: 4px;
+        i{
+            font-size: 10px;
+            margin-right: 8px;
+        }
+    }
+    .ant-select-arrow:before{
+        content: "\E606";
+        color: rgba(0,0,0,.60);
+    }
+    .ant-form button{
+        &:hover{
+            background: #024b84!important;
+            color: #d0d5d3;
+        }
+    }
+    .loginpage-content-header{
+        width: 310px;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 40px;
+        color:RGBA(0, 0, 0, 0.87);
+        font-weight: 600;
+    }
+    .ant-form{
+        width: 310px;
+        .captcha{
+            .send{
+                width: 88px;
+                height:48px;
+            }
+            .not-send{
+                background-color: rgba(43, 149, 255, 0.1);
+                border:none;
+                color: $maincolor;
+            }
+            .not-send:hover{
+                border-color: $maincolor;
+                color:#d0d5d3; 
+            }
+            .already-send{
+                background-color: #B4BCC8;
+            }
+            .already-send:hover{
+                border-color: #B4BCC8;
+            }
+            .ant-form-item-children{
+                display: flex;
+                justify-content: space-between;
+                input{
+                    margin-right: 8px;
+                }
+                // button{
+                //     width: 88px;
+                //     height: 48px;
+                //     line-height: 48px;
+                //     background: #2277CC;
+                //     border-radius: 6px;
+                //     cursor: pointer;
+                //     outline: none;
+                // }
+            }
+        }
+        .ant-input-group-addon{
+            border:none;
+            background: #fff;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+        }
+        .ant-form-item{
+            margin-bottom: 14px;
+        }
+        .ant-form-item-control-wrapper{
+            height: 48px;
+        }
+        input{ 
+            width: 310px;
+            height: 48px;
+        }
+        .phone{
+            width: inherit;
+        }
+        .ant-select-selection,.ant-select-selection__rendered,.ant-select-selection-selected-value{
+            height: 48px;
+            line-height: 48px;
+            background: #fff;
+        }
+        .ant-input{
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+            border:none;
+            background: #fff;
+        }
+        button{
+            width: 310px;
+            height: 48px;
+            background-color: $maincolor;
+            color: #fff;
+            border-color: $maincolor;
+        }
+    }
+    .loginpage-forgot{
+        width: 310px;
+        text-align: right;
+        a{
+            font-size: 12px;
+            color: $maincolor;
+        }
+    }
+    .loginpage-create{
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 310px;
+        text-align: center;
+        span{
+            font-size: 12px;
+            color: RGBA(0, 0, 0, 0.6);
+            a{
+                font-size: 12px;
+                color: $maincolor;
+            }
+        }
+    }
+    .toRouter{
+        &:hover{
+            color: $maincolor;
+        }
+    }
+    .tosign{
+        margin-top: 146px;
+        margin-bottom: 40px;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .signup{
+        width: 100%;
+        .loginpage-content-header{
+            width: 100%;
+        }
+        .ant-form{
+            width: 100%;
+            input{
+                width: 100%;
+            }
+            button{
+                width: 100%;
+            }
+        }
+    }
+    .ant-tooltip{
+        display: none;
+    }
+}

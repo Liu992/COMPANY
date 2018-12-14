@@ -1,0 +1,117 @@
+.myorder{
+    .header{
+        .h-l{
+            .aubitex-nav{
+                .aubitex-nav-ul{
+                    li:nth-child(4),li:nth-child(5){
+                        display: none;
+                    }
+                    li:nth-child(6),li:nth-child(7){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .myorder-box{
+        .myorder-title{
+            font-size: 20px;
+            margin-top: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 30px;
+        }
+        .myorder-list{
+            width: 100%;
+            min-height: 400px;
+            .myorder-table{
+                width: 100%;
+                thead{
+                    th{
+                        height: 48px;
+                        border-bottom: 1px solid RGBA(0, 0, 0, 0.08);
+                    }
+                    tr{
+                        th:first-child{
+                            text-align: left;
+                        }
+                        th:last-child{
+                            text-align: right;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        cursor: pointer;
+                        width: 100%;
+                        border-bottom: 1px solid RGBA(0, 0, 0, 0.08);
+                        td{
+                            height: 48px;
+                        }
+                        td:first-child{
+                            text-align: left;
+                        }
+                        td:last-child{
+                            text-align: right;
+                        }
+                    }
+                    tr:last-child{
+                        border:none;
+                    }
+                }
+            }
+            .myorder-ul{
+                width: 100%;
+                display: none;
+                li{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    border-radius: 6px;
+                    border: 1px solid #2277CC;
+                    padding: 15px;
+                    p{
+                        margin-bottom: 8px;
+                    }
+                    .no{
+                        width: 100%;
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    .type{
+                        width: 100%;
+                    }
+                    .amount{
+                        width: 50%;
+                        display: inline-block;
+                    }
+                    .price{
+                        width: 50%;
+                        display: inline-block;
+                    }
+                    .time{
+                        width: 100%;
+                    }
+                    .status{
+                        width: 100%;
+                    }
+                    .conterparty{
+                        width: 100%;
+                    }
+                }
+            }
+            .ant-pagination{
+                text-align: center;
+                margin:40px 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .myorder .myorder-box .myorder-list .myorder-table{
+        display: none;
+    }
+    .myorder .myorder-box .myorder-list .myorder-ul{
+        display: block;
+    }
+}

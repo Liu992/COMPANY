@@ -1,0 +1,38 @@
+.coin-ul{
+    width: 100%;
+    display: flex;
+    li{
+        width: 195px;
+        height: 250px;
+        box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+        flex: 1;
+        padding: 20px;
+        margin: 0 14px;
+    }
+    .coin{
+        display: flex;
+        justify-content: space-between;
+        span{
+            display: inline-block;
+        }
+    }
+    .report{
+        margin-top:4px;
+        .high{
+            display: block;
+            font-size: 20px;
+        }
+        .low{
+            display: block;
+        }
+    }
+    .num{
+        .high{
+            margin-left: 4px;
+        }
+    }
+    .kline{
+        display: flex;
+        justify-content: center;
+    }
+}

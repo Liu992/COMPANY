@@ -1,0 +1,202 @@
+$maincolor: #2277CC;
+$black60: rgba(0,0,0,.6);
+.loginpage{
+    width: 310px;
+    margin: 0 auto;
+    .ant-form-item-children{
+        display: flex;
+        box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+    }
+    .none{
+        display: none;
+    }
+    .verify-dialog{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: RGBA(0, 0, 0, 0.65);
+        z-index: 999;
+        .verify-dialog-box{
+            width: 390px;
+            height: 290px;
+            background: #fff;
+            border-radius: 6px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            box-sizing: border-box;
+            padding: 48px;
+            .sms{
+                width: 100%;
+                height: 48px;
+                margin-bottom: 24px;
+                display: flex;
+                .send{
+                    width: 80px;
+                    height: 100%;
+                    background: transparent;
+                    
+                    border-radius: 6px;
+                    margin-left: 10px;
+                    outline: none;
+                    vertical-align:middle;
+                    vertical-align: text-top;
+                }
+                .not-send{
+                    border:1px solid #2277CC;
+                    color: #2277CC;
+                    background-color: transparent;
+                }
+                .already-send{
+                    background-color: #B4BCC8;
+                    border-color: #B4BCC8;
+                    color: #fff;
+                }
+                .already-send:hover{
+                    border-color: #B4BCC8;
+                }
+                .ant-input{
+                    height: 48px;
+                    width: 220px;
+                    margin-bottom: 24px;
+                }
+            }
+            .ant-input{
+                height: 48px;
+                width: 100%;
+                margin-bottom: 24px;
+            }
+            .ant-btn{
+                background-color: $maincolor;
+                color: #fff;
+                width: 100%;
+                height: 48px;
+                display: inline-block;
+            }
+            .ant-tabs-nav-scroll{
+                text-align: center;
+            }
+            // .ant-tabs{
+            //     width: 100%;
+            //     height: 100%;
+            //     .ant-tabs-bar{
+            //         border-bottom: none;
+            //         margin: 0px 0 48px 0;
+            //     }
+            // }
+            // .ant-tabs-nav{
+            //     width: 100%;
+            //     text-align: center;
+            // }
+            // .ant-tabs-ink-bar{
+            //     margin-left: 44px;
+            //     width: 88px!important;
+            //     height: 3px;
+            // }
+            // .ant-tabs-ink-bar{
+            //     background-color:$maincolor;
+            // }
+            // .ant-tabs-tab{
+            //     color: $black60;
+            // }
+        }
+    }
+    .loginpage-content-header{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 48px;
+        color:RGBA(0, 0, 0, 0.87);
+        font-weight: 600;
+    }
+    .loginpage .ant-form-item:nth-child(3){
+        margin: 0;
+        display: flex;
+        input{
+            width: 210px;
+            height: 48px;
+        }
+    }
+    .ant-form{
+        .ant-form-item{
+            margin-bottom: 12px;
+        }
+        input{
+            width: 100%;
+            height: 48px;
+            border:none;
+        }
+        .ant-select-selection,.ant-select-selection__rendered,.ant-select-selection-selected-value{
+            height: 48px;
+            line-height: 48px;
+        }
+        button{
+            width: 100%;
+            height: 48px;
+            background-color: $maincolor;
+            color: #fff;
+        }
+        button:hover{
+            border-color: $maincolor;
+        }
+        button:focus{
+            border-color: $maincolor;
+        }
+    }
+    .loginpage-forgot{
+        width: 100%;
+        text-align: right;
+        a{
+            font-size: 14px;
+            color: $maincolor;
+        }
+    }
+    .loginpage-create{
+        margin-top: 180px;
+        margin-bottom: 48px;
+        width: 100%;
+        text-align: center;
+        // margin-top:100%;
+        span{
+            font-size: 14px;
+            color: RGBA(0, 0, 0, 0.6);
+            a{
+                font-size: 14px;
+                color: $maincolor;
+            }
+        }
+        span:hover a{
+            color: $maincolor;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .loginpage{
+        width: 100%;
+        .loginpage-forgot{
+            width: 100%;
+            text-align: left;
+        }
+        .verify-dialog{
+            .verify-dialog-box{
+                width: 80%;
+                height: 260px;
+                .ant-input{
+                    width: 100%;
+                }
+                .ant-btn{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .loginpage .verify-dialog .verify-dialog-box .sms {width: 100%;}
+    .loginpage .verify-dialog .verify-dialog-box .sms .ant-input {width: 95%;}
+    .loginpage .ant-form input {width: 100%;}
+    .signin .signin-content .ant-btn {width: 100%;}
+
+}

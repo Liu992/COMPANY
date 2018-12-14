@@ -1,0 +1,324 @@
+.withdraw-box{
+    width: 100%;
+    min-width: 1040px;
+    margin: 0 auto;
+    padding-top: 40px!important;
+    background: #fff;
+    .amount{
+        height: 48px;
+        box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+        margin-bottom: 10px;
+        border-radius: 6px;
+        padding-left: 12px;
+        input{
+            width: 100%;
+            height: 100%;
+            border:none;
+            outline: none;
+        }
+    }
+    .receive{
+        height: 48px;
+        box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+        margin-bottom: 10px;
+        border-radius: 6px;
+        background: #e8e8e8;
+        padding:0 12px;
+        display: flex;
+        align-content: center;
+        input{
+            flex: 1;
+            border: none;
+            background: transparent;
+        }
+        span{
+            display: block;
+            line-height: 48px;
+        }
+    }
+    .assetpass{
+        height: 48px;
+        box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+        border-radius: 6px;
+        padding-left: 12px;
+        input{
+            width: 100%;
+            height: 100%;
+            border:none;
+            outline: none;
+        }
+    }
+    .gaverify{
+        margin-top:10px;
+    }
+    .emailerify{
+        margin-top: 10px;
+    }
+    .sendinp{
+        width: 100%;
+        height: 48px;
+        box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+        border-radius: 6px;
+        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .send{
+            margin-left: 8px;
+            width: 75px;
+            height: 24px;
+            outline: none;
+            border-radius: 6px;
+            border:none;
+            background: rgba(43, 149, 255, 0.1);
+            color:#2277CC;
+        }
+        .already-send{
+            background-color: #B4BCC8;
+            border:1px solid #b4b4b4;
+            color: #fff;
+        }
+        input{
+            width: 100%;
+            height: 100%;
+            border:none;
+            outline: none;
+        }
+    }
+    .withdraw-tip{
+        margin-top: 8px;
+        .locked{
+            float: right;
+        }
+    }
+    .withdraw-btn{
+        width: 100%;
+        height: 48px;
+        background: #2277CC;
+        font-size: 16px;
+        color:#fff;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+        margin-top:20px;
+    }
+    // 弹窗
+    .dialog-verify{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.5);
+        z-index: 20;
+        .verify-box{
+            width: 300px;
+            height: 240px;
+            background: #fff;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 6px;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .close{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+        }
+    }
+    .withdraw-title{
+        margin-bottom: 28px;
+    }
+    .withdraw-content{
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+        border-radius: 6px;
+        color: #333333;
+        
+
+        .content-left{
+            width: 545px;
+        }
+        .left-coin{
+            height: 48px;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+            border-radius: 6px;
+            .ant-select-selection--single{
+                height: 100%;
+            }
+            .ant-select-selection__rendered{
+                line-height: 48px;
+            }
+        }
+        .left-address{
+            height: 48px;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+            border-radius: 6px;
+            margin-top:10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 12px;
+            position: relative;
+            .addinp{
+                flex: 1;
+                height: 48px;
+                padding-left: 12px;
+                border:none;
+                outline: none;
+            }
+            .addlist{
+                width: 100%;
+                max-height: 150px;
+                background: #fff;
+                overflow-y: scroll;
+                box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+                position: absolute;
+                top: 48px;
+                left: 0;
+                border-radius: 6px;
+                li{
+                    width: 100%;
+                    height: 30px;
+                    padding-left: 12px;
+                    line-height: 30px;
+                    span:nth-child(1){
+                        display: inline-block;
+                        width: 70%;
+                    }
+                    span:nth-child(2){
+                        display: inline-block;
+                        width: 30%;
+                    }
+                }
+                li:hover{
+                    background: #2277CC;
+                    color:#fff;
+                }
+            }
+            #input{
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                z-index: -10;
+            }
+            .add-btn{
+                width: 110px;
+                height: 48px;
+                background: rgba(34, 119, 204, 0.15);
+                border: none;
+                border-radius: 6px;
+                color:rgba(34, 119, 204, 1);
+                outline: none;
+            }
+        }
+        .left-tip{
+            padding-left: 14px;
+            border-radius: 6px;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+            height: 48px;
+            line-height: 48px;
+            &>p{
+                margin-bottom: 4px;
+                font-size: 12px;
+            }
+        }
+        .content-right{
+            width: 295px;
+        }
+    }
+    .withdraw-history{
+        margin-top:50px;
+        padding-left: 40px;
+        position: relative;
+        min-height: 300px;
+        .history-tip{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            outline: none;
+            border: none;
+            box-shadow: 2px 0px 8px rgba(48, 120, 192, 0.2);
+            position: absolute;
+            top: 2%;
+            left: 0;
+            color:#2277CC;
+            font-size: 16px;
+        }
+        .table{
+            width: 100%;
+            text-align: center;
+            box-shadow: 0px 0px 8px rgba(48, 120, 192, 0.2);
+            li{
+                width: 100%;
+                padding:0 30px;
+                .li-list{
+                    width: 100%;
+                    display: flex;
+                    span{
+                        display: inline-block;
+                        flex: 1;
+                        height: 50px;
+                        line-height: 50px;
+                    }
+                }
+                .li-detail{
+                    display: block;
+                    width: 100%;
+                    transition: all 1s;
+                    text-align: left;
+                    padding-left: 32px;
+                    overflow: hidden;
+                    transition: height .5s;
+                    span{
+                        display: block;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+                .li-detail-hide{
+                    height: 0;
+                    border-top: 1px solid #fff;
+                }
+                .li-detail-show{
+                    height: 60px;
+                    border-top: 1px solid #ecebeb;
+                }
+                &:nth-child(even) {
+                    background-color: #fff;
+                }
+                &:nth-child(odd) {
+                    background-color: rgba(34, 119, 204, 0.08);
+                }
+            }
+        }
+        .page{
+            text-align: center;
+        }
+        .nullfile{
+            text-align: center;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 80px;
+                height: 80px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

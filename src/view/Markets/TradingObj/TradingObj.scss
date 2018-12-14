@@ -1,0 +1,42 @@
+$black12:rgba(0,0,0,.12);
+.tradingobj{
+    width: 100%;
+    height: 100%;
+    &>ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        li{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            &>div{
+                // height: 100%;
+            }
+            .li-left{
+                width: 30%;
+                padding-left: 20px;
+                b{
+                    display: block;
+                }
+                span{
+                    display: block;
+                    i{
+                        margin-right: 10px;
+                        font-style: normal;
+                    }
+                }
+            }
+            .li-right{
+                flex: 1;
+            }
+        }
+        li:nth-child(even){
+            background-color: rgba(34, 119, 204, 0.08);
+        }
+        li:nth-child(odd){
+            background-color: #fff;
+        }
+    }
+}
