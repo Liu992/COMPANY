@@ -12,6 +12,7 @@ class EchartsTest extends Component {
     let { name, show, data, lineColor, fontSize, xdata } = newProps;
     var myChart = ECharts.init(document.getElementsByClassName(name)[0]);
     data&&data.length == 0 ? data = 0 : data
+    // console.log(data)
     myChart.setOption({
       xAxis: {
         type: 'category',

@@ -68,9 +68,6 @@ $pricelistcolor: #B4BCC8;
                         // }
                     }
                 }
-                .swiper-pagination-bullets{
-                    bottom: 0px;
-                }
                 .swiper-pagination{
                     span{
                         width: 6px;
@@ -111,7 +108,7 @@ $pricelistcolor: #B4BCC8;
         .home-coinlist{
             width: 100%;
             max-width: 1360px;
-            padding: 0 10%;
+            padding: 0 5%;
             margin: 100px 0;
         }
         .home-pricelist{

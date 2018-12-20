@@ -51,11 +51,12 @@ class MyOrders extends PureComponent {
     if (!myTrades || myTrades.length === 0 || sign.isLogin === false) {
       tradeLoad = false;
     }
+    console.log(orderLoad, tradeLoad)
     return (
       <div className="order">
         <div className="order-table">
           {/* 球 */}
-          <button className="order-title">当前委托</button>
+          <button className="order-title">{intl.formatMessage({id: "trading-orders-title"})}</button>
           {
             // 判断有无数据
             !orderLoad ?
@@ -104,10 +105,10 @@ class MyOrders extends PureComponent {
           }
         </div>
         <div className="order-table">
-          <button className="order-title">委托历史</button>
+          <button className="order-title">{intl.formatMessage({id:"trading-trades-title"})}</button>
           {
             // 判断有无数据
-            tradeLoad ?
+            !tradeLoad ?
               <h1 className="nothave font20">{intl.formatMessage({ id: "trading-not-data" })}</h1> :
               <div className="tablebox">
                 <table className="font12">

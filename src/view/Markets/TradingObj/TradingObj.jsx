@@ -4,13 +4,20 @@ import { withRouter } from 'react-router-dom';
 import { injectIntl } from 'react-intl';
 import Formatter from '@/utils/formatter';
 import Kline from "@/component/Kline";
+import { connect } from "react-redux"
+
+let mapStateToProps = (state) => {
+  return {
+    klineData: state.klineAction.data
+  }
+}
 
 @withRouter
+@connect(mapStateToProps)
 class TradingObj extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      search: '',
       exchangeList: null
     }
   }
@@ -21,31 +28,8 @@ class TradingObj extends Component {
       window.location.reload();
     }
   }
-  changeMarket = (e) => {
-    let newarr = [];
-    let {markets} = this.props;
-    this.setState({
-      search: e.target.value
-    }, () => {
-      if (!this.state.search) {
-        this.setState({
-          exchangeList: markets
-        })
-      } else {
-        for (let i = 0; i < markets.length; i++) {
-          if (markets[i].code.toUpperCase().indexOf(this.state.search.toUpperCase())>-1) {
-            newarr.push(markets[i])
-          }
-        }
-        this.setState({
-          exchangeList: newarr
-        })
-      }
-    })
-  }
   render() {
-    let {intl} = this.props;
-    let {search} = this.state
+    let {intl,klineData} = this.props;
     let {markets,tickers} = this.props
     if (this.state.exchangeList!==null) {
       markets = this.state.exchangeList
@@ -57,13 +41,14 @@ class TradingObj extends Component {
           {
             Array.isArray(markets)&&markets.map((item, index) => {
               let ticker = tickers[item.code];
+              let data = klineData&&klineData[item.code]
               return (
                 <li key={index} onClick={this.handleItemClick.bind(this, item.code)}>
                   <div className="li-left">
                     <b>{item.name}</b>
                     <span><i>{Formatter.fixBid(ticker.last)}</i><i>{Formatter.priceChange(ticker.open, ticker.last)=='+NaN'?'+0.00':Formatter.priceChange(ticker.open, ticker.last)}%</i></span>
                   </div>
-                  <div className="li-right"><Kline name={"li-right"+index} widthSize={"100%"} heightSize={"100%"} show={false} data={[12,43,54,12,435,121]}/></div>
+                  <div className="li-right"><Kline name={"li-right"+index} widthSize={"100%"} heightSize={"100%"} show={false} data={data}/></div>
                 </li>
               )
             })

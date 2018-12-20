@@ -105,14 +105,14 @@ class Aubitex extends Component {
                       qwertyuiop
                     </h1>
                   </div>
-
                   <p>asdfghjkl</p>
                 </div>
                 <div className="swiper-slide stop-swiping">
                   <div className="slide-top">
                     <span className="slide-tip">COMPANY</span>
                     <h1>
-                      <span className="maingreen">1234567890</span>qwertyuiop
+                      <span className="maingreen">1234567890</span>
+                      qwertyuiop
                     </h1>
                   </div>
                   <p>asdfghjkl</p>
@@ -126,9 +126,9 @@ class Aubitex extends Component {
             <div className="home-notice">
               <div className="swiper-container" ref="noticeContainer">
                 <div className="swiper-wrapper">
-                  <div className="swiper-slide"><img src={require('../../assets/image/notice.png')} alt="" /> Slide 1</div>
-                  <div className="swiper-slide"><img src={require('../../assets/image/notice.png')} alt="" /> Slide 2</div>
-                  <div className="swiper-slide"><img src={require('../../assets/image/notice.png')} alt="" /> Slide 3</div>
+                  <div className="swiper-slide"><img src={require('../../assets/image/notice.png')} alt="" /> 公告 1</div>
+                  <div className="swiper-slide"><img src={require('../../assets/image/notice.png')} alt="" /> 公告 2</div>
+                  <div className="swiper-slide"><img src={require('../../assets/image/notice.png')} alt="" /> 公告 3</div>
                 </div>
               </div>
             </div>

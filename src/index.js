@@ -12,14 +12,13 @@ import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
 import store from './store';
-import { zh_CN, en_US, ko_US, zh_TW } from './i8n'
+import { zh_CN, en_US } from './i8n'
 // 国际化
 import { addLocaleData, IntlProvider } from 'react-intl';
 import zh from 'react-intl/locale-data/zh';
 import en from 'react-intl/locale-data/en';
-import ko from 'react-intl/locale-data/ko';
 
-addLocaleData([...zh, ...en,...ko]);
+addLocaleData([...zh, ...en]);
 const ReactDOM = reactDOMPolyfill(React);
 
 export class AppBox extends React.Component {
@@ -37,12 +36,6 @@ export class AppBox extends React.Component {
         break;
       case "en":
         message = en_US
-        break;
-      case "ko":
-        message = ko_US
-        break;
-      case "zh-Hant":
-        message = zh_TW;
         break;
       default:
         message = zh_CN

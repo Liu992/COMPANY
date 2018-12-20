@@ -45,11 +45,11 @@ class Header extends Component {
       return false;
     }
     if (window.localStorage.getItem('lang') === 'zh') {
-      document.title = "环球交易所"
+      document.title = "泰坦交易所"
       this.setState({
         defaultLang: "zh"
       }, () => {
-        document.title = "环球交易所"
+        document.title = "泰坦交易所"
       });
     } else {
       this.setState({
@@ -108,9 +108,9 @@ class Header extends Component {
       defaultLang: value
     }, () => {
       if (value === 'en') {
-        document.title = "TOP GLOBAL"
+        document.title = "COMPANY"
       } else {
-        document.title = "环球交易所"
+        document.title = "泰坦交易所"
       }
       window.localStorage.setItem('lang', value)
       window.location.reload()
@@ -214,10 +214,8 @@ class Header extends Component {
             >
               <Option value="en">English</Option>
               <Option value="zh">简体中文</Option>
-              <Option value="ko">한국어</Option>
-              <Option value="zh-Hant">繁体</Option>
             </Select>
-            <img src={require("../../assets/image/languages/en.png")} alt="" />
+            <img src={require("../../assets/image/languages/"+defaultLang+".png")} alt="" />
           </div>
         </div>
 
